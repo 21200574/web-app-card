@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<link rel="icon" href="assets/img/bank.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Card UI</title>
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo-nav">PAGO CON TARJETA</div>
+
+<ul class="nav-links">
+<li>INICIO</li>
+<li>TARJETAS</li>
+<li>PAGOS</li>
+<li>CONTACTO</li>
+</ul>
+
+</nav>
+
+
+<!-- CIRCULOS FONDO -->
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+
+
+<div class="container">
+
+<!-- TARJETA -->
+
+<div class="card-container">
+
+<div class="card" id="creditCard">
+
+<div class="card-front">
+
+<div class="chip"></div>
+
+<div class="card-number" id="cardNumber">
+#### #### #### ####
+</div>
+
+<div class="card-info">
+
+<div>
+<div class="label">NOMBRE DE LA TARJETA</div>
+<div class="value" id="cardName">NOMBRE COMPLETO</div>
+</div>
+
+<div>
+<div class="label">EXPIRES</div>
+<div class="value" id="cardExpiry">MM/YY</div>
+</div>
+
+</div>
+
+<div class="logo">VISA</div>
+
+</div>
+
+
+<div class="card-back">
+
+<div class="magnetic-strip"></div>
+
+<div class="cvv-box">
+<div class="cvv" id="cardCVV">***</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FORMULARIO -->
+
+<div class="form-container">
+
+<h2>Datos De La Tarjeta</h2>
+
+<form id="paymentForm">
+
+<input type="text" id="nameInput" placeholder="Nombre De La Tarjeta">
+
+<input type="text" id="numberInput" placeholder="Numero De Tarjeta" maxlength="19">
+
+<div class="row">
+
+<input type="text" id="expiryInput" placeholder="MM/YY" maxlength="5">
+
+<input type="text" id="cvvInput" placeholder="CVV" maxlength="3">
+
+</div>
+
+<button type="submit">Pagar</button>
+
+<p id="errorMsg"></p>
+
+</form>
+
+</div>
+
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>By: Leonardo Alvarez</p>
+
+</footer>
+
+
+<script src="/assets/js/script.js"></script>
+
+</body>
+</html>
